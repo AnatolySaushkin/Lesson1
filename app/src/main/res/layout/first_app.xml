@@ -3,34 +3,109 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="22dp">
+    android:padding="2dp">
+
 
     <EditText
-        android:id="@+id/first_number"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="22dp"
-        android:hint="First number" />
-
-    <EditText
-        android:id="@+id/second_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="22dp"
-        android:hint="Second number" />
+        android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/compare"
+        android:id="@+id/buttonCounter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="22dp"
-        android:text="Compare" />
+        android:text="Считаем ворон" />
 
-    <TextView
-        android:id="@+id/result"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="22dp"
-        android:hint="Result" />
+        android:orientation="horizontal"
+        android:padding="4dp">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textViewColorLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выводить красным цветом"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewColorSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поставьте галочку для вывода красным цветом"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="2dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textViewBoldLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Использовать жирный текст"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewBoldSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отметьте для выделения жирным"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="2dp">
+
+            <Switch
+                android:id="@+id/switchBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="Не курсив"
+        android:textOn="Курсив"/>
+
+    </LinearLayout>
